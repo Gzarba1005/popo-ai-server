@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from PIL import Image
 import io
 import torch
+import asyncio
 from torchvision import transforms
 from transformers import ViTForImageClassification, ViTImageProcessor
 
@@ -17,10 +18,18 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+import os
+
 model_name = "nateraw/food"
+
+print("Cargando modelo...")
+
 processor = ViTImageProcessor.from_pretrained(model_name)
 model = ViTForImageClassification.from_pretrained(model_name)
+
 model.eval()
+
+print("Modelo cargado correctamente")
 
 @app.get("/health")
 def health():
