@@ -1,6 +1,6 @@
 # CarboBuddy AI Server — API de reconocimiento de comidas
 
-Servidor de inferencia en **Python + FastAPI** que recibe la foto de un plato y devuelve los 5 alimentos más probables con su nivel de confianza. Fue el primer motor de detección de [CarboBuddy](https://github.com/Gzarba1005/popo-mvp), una app de cálculo de insulina para personas con diabetes tipo 1.
+Servidor de inferencia en **Python + FastAPI** que recibe la foto de un plato y devuelve los 5 alimentos más probables con su nivel de confianza. Fue el primer motor de detección de [CarboBuddy](https://github.com/GonchiZarba/popo-mvp), una app de cálculo de insulina para personas con diabetes tipo 1.
 
 ## Cómo funciona
 
